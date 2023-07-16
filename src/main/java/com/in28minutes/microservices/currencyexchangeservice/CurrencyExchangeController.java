@@ -25,7 +25,7 @@ public class CurrencyExchangeController {
 			@PathVariable String to) {
 		
 		logger.info("retrieveExchangeValue called with {} to {}", from, to);
-		logger.info("Test for Jenkins Build 2.1");
+		logger.info("Test for Jenkins Build 2.2");
 		
 		CurrencyExchange currencyExchange 
 					= repository.findByFromAndTo(from, to);
