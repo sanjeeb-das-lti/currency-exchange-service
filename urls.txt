@@ -3,6 +3,9 @@ Currency Exchange Service
 
 http://34.67.62.75:8000/currency-exchange/from/USD/to/INR
 
+http://35.232.1.20:8000/currency-exchange/from/USD/to/INR
+New Service
+
 Currency Conversion Service
 - http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 
