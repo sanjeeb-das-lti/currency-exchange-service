@@ -25,7 +25,7 @@ spec:
         app: currency-exchange
     spec:
       containers:
-      - image: dsan2119/currency-exchange-ser-github-action
+      - image: dsan2119/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
         imagePullPolicy: IfNotPresent
         name: mmv2-currency-exchange-service
         resources:
