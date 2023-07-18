@@ -32,19 +32,19 @@ This is a complete project to showcase the complete CI/CD workflow using Github 
    kubectl expose deployment currency-exchange --type=LoadBalancer --port=8000
 5. Check if all the components are created correctly- kubectl get all
 
-   **Create JSON files to integrate it with the code base**
-   Activate GCloud on local machine
+**Create JSON files to integrate it with the code base**
+Activate GCloud on local machine
 1. glcoud config set project *your.project.id*
    **Fix issue for authentication to GCloud**
 1. gcloud components install gke-gcloud-auth-plugin
 2. gcloud container clusters get-credentials *cluster.name* --zone=*zone.on.which.cluster.is.created*
 
-   **Active kubectl on local machine and create the deployment.yaml**
+**Active kubectl on local machine and create the deployment.yaml**
 1. kubectl get deployments currency-exchange -o yaml >> deployment.yaml
 2. kubectl get service currency-exchange -o yaml >> service.yaml
 3. Merge the service.yaml in deployment.yaml to create a single file for deployment
 
-   **Deploy the project on Github**
+**Deploy the project on Github**
    Create Github Actions Workflow on GitHub tab: Actions
 1. Create Action for Build with Maven [This project is Maven Based project]
 2. Create Action to Build and Publish Image to DockerHub repository
